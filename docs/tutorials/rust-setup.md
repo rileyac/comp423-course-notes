@@ -2,4 +2,4 @@
 
 * Primary author: [Riley Chapman](https://github.com/rileyac)
 
-* Reviewer: Sarah Glenn (https://github.com/skglenn07)
+* Reviewer: [Sarah Glenn](https://github.com/skglenn07)
