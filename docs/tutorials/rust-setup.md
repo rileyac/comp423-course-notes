@@ -43,6 +43,9 @@ cd rust-tutorial
 ```
 git init
 ```
+!!! note
+    This command creates a new, empty Git repository! This will allow you to track changes and versions of your project. 
+
 (D) Create a README file:
 ```
 echo "# Setting up a dev container for Rust" > README.md
@@ -162,10 +165,11 @@ You can use the cargo run command to compile and run the project in one step:
 cargo run
 ```
 
-**What’s the difference between ```cargo build``` and ```cargo run```?**
-
-* ```cargo build```: Only compiles the project and outputs the executable, but does not run it.
-* ```cargo run```: Compiles (if necessary) and then runs the project in one command.
+??? question
+    **What's the difference between ```cargo build``` and ```cargo run```?**
+    
+    * ```cargo build```: Only compiles the project and outputs the executable, but does not run it.
+    * ```cargo run```: Compiles (if necessary) and then runs the project in one command.
 
 ## Summary
 At this point, you should have seen "Hello COMP423" print in your terminal! Congratulations on finishing the tutorial! To review, you have learned how to:
