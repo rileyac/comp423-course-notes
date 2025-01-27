@@ -25,28 +25,28 @@ Before we begin, make sure you have the following:
 
 4. Docker installed: Required to run the dev container. Get Docker [here.](https://www.docker.com/products/docker-desktop)
 
-5. Command-line basics
+5. Command-line basics: A basic knowledge of how to use the command line.
 
 ## Part 1: Creating Git Repository
 (Taken from the [COMP 423 MkDocs Tutorial](https://comp423-25s.github.io/resources/MkDocs/tutorial))
 
 ### Step 1: Create a Local Directory and Initialize Git
-(A) Open your terminal
+(1) Open your terminal
 
-(B) Create a new directory for your project:
+(2) Create a new directory for your project:
 
 ```
 mkdir rust-tutorial
 cd rust-tutorial
 ```
-(C) Initialize a new git repsitory:
+(3) Initialize a new git repsitory:
 ```
 git init
 ```
 !!! note
     This command creates a new, empty Git repository! This will allow you to track changes and versions of your project. 
 
-(D) Create a README file:
+(4) Create a README file:
 ```
 echo "# Setting up a dev container for Rust" > README.md
 git add README.md
@@ -115,7 +115,7 @@ The ```devcontainer.json``` file defines the configuration for your development 
 
 ### Step 2: Reopen the Project in a VSCode Dev Container
 
-Reopen the project in the container by pressing Ctrl+Shift+P (or Cmd+Shift+P on Mac), typing "Dev Containers: Reopen in Container," and selecting the option.
+Reopen the project in the container by pressing Ctrl+Shift+P (or Cmd+Shift+P on Mac), typing "Dev Containers: Reopen in Container," and selecting this option.
 
 When you open the project in VS Code, it will automatically pull the Rust Docker image, set up the environment, and install the necessary extensions. This ensures you have a consistent and reproducible Rust development setup every time. It might take a minute to load.
 
