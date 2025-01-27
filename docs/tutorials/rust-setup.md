@@ -98,7 +98,7 @@ The ```devcontainer.json``` file defines the configuration for your development 
 ```
 {
   "name": "Rust Dev Container",
-  "image": "rust:latest",  
+  "image": "mcr.microsoft.com/vscode/devcontainers/rust:latest",  
   "customizations": {
     "vscode": {
       "settings": {
@@ -149,7 +149,7 @@ fn main() {
 ```
 This code is a simple Rust program that prints "Hello COMP423" to the terminal when run.
 
-### Step 3: Build the Project Using Cargo
+### Step 3: Build and Run the Project Using Cargo
 
 Now that you’ve written the program, you need to **build** it. Rust uses **Cargo** to build projects. After ```cd```-ing into your newly created ```hello-comp423``` directory, run the following command to compile the project:
 ```
@@ -157,13 +157,21 @@ cargo build
 ```
 
 * This command will compile the project and generate an executable file.
-* By default, this output is put in the ```target/debug directory```. The filename will be the same as the project.
+* By default, this output is put in the ```target/debug directory```. The filename will be the same as the project (in this case, ```hello-comp423```).
+* Cargo build is similar to the ```gcc`` command, which is used to compile C programs. They both create an executable file that can be ran manually. To run the executable manually, you would use the following line:
+```
+./target/debug/hello-comp423
 
-### Step 4: Run the Project Using Cargo
-You can use the cargo run command to compile and run the project in one step:
+```
+
+This should print "Hello COMP 423" to the terminal. 
+
+Alternatively, you can use the ```cargo run``` command to compile and run the project in one step:
 ```
 cargo run
 ```
+
+This should also print "Hello COMP 423" to the terminal.
 
 ??? question
     **What's the difference between ```cargo build``` and ```cargo run```?**
@@ -173,6 +181,7 @@ cargo run
 
 ## Summary
 At this point, you should have seen "Hello COMP423" print in your terminal! Congratulations on finishing the tutorial! To review, you have learned how to:
+
 * Set up a new dev container for Rust
 * Initialize a new Git Repository
 * Create a new project in Rust
