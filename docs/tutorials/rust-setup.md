@@ -179,10 +179,22 @@ This should also print "Hello COMP 423" to the terminal.
     * ```cargo build```: Only compiles the project and outputs the executable, but does not run it.
     * ```cargo run```: Compiles (if necessary) and then runs the project in one command.
 
+## Part 4: Stage and Commit your Changes to GitHub
+Now that you have edited files and written a program, you want to make sure your work is saved and your projects current version is tracked. Since we initialized and connected a Git repo for this project, we can run the following lines to stage your changes, commit them, and push your changes up to the repo you created.
+```
+git add -A
+git commit -m "Finished "Hello COMP423" rust tutorial."
+git push
+```
+
+!!! note
+    You do not have to specify which branch you are pushing to since we used the ```-u``` flag when we initially pushed our main branch, connecting our local main branch and our remote main branch.
+
 ## Summary
-At this point, you should have seen "Hello COMP423" print in your terminal! Congratulations on finishing the tutorial! To review, you have learned how to:
+Congratulations on finishing the tutorial! To review, you have learned how to:
 
 * Set up a new dev container for Rust
 * Initialize a new Git Repository
 * Create a new project in Rust
 * Write, compile, and run a simple "Hello COMP 423" program in Rust
+* Track your projects version history by pushing up to a Git repo
